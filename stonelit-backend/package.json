@@ -61,7 +61,6 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "public": "react-app-rewired build; tar zcvf backend.tar.gz build/*; scp backend.tar.gz root@1.15.72.79:~/backend.tar.gz; ssh root@1.15.72.79 'tar -zxvf ~/backend.tar.gz -C /usr/share/www/stonelit/frontend/backend --strip-components 1 --overwrite'; rm backend.tar.gz",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
