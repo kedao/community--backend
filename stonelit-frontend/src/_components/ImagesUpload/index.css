@@ -1,0 +1,119 @@
+.multiple-files-container {
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    position: relative;
+    border-radius: .1875rem;
+
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    padding: 10px;
+
+    gap: 12px;
+}
+
+.multiple-upload-preview {
+    margin: 0;
+    border: 1px solid #ddd;
+    background-color: #FFF;
+    border-radius: .1875rem;
+}
+
+.multiple-upload-preview:first-child {
+    margin-right: 0;
+}
+
+/* single */
+
+.file-container {
+    margin-bottom: 1.25rem;
+
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.upload-preview-thumbnails {
+
+}
+
+.upload-preview {
+    margin-right: 0;
+    border: 1px solid #ddd;
+    background-color: #FFF;
+    border-radius: .1875rem;
+}
+
+.upload-preview-frame {
+    position: relative;
+    height: 10rem;
+    min-width: 10rem;
+}
+
+.upload-preview-unavailable {
+    height: 10rem;
+    width: 10rem;
+}
+
+.upload-preview-unavailable-multiple {
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+}
+
+.upload-preview-image {
+    border-top-left-radius: .125rem;
+    border-top-right-radius: .125rem;
+
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.upload-preview-image-error {
+    filter: alpha(opacity:30);
+    opacity: 0.3;
+}
+
+.upload-preview-state {
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: #FFF 5px 0 10px;
+    color: #FFFFFF;
+}
+
+.upload-preview-text {
+    font-size: 4rem;
+}
+
+.upload-preview-uploading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 4rem;
+    transform: translate(-50%, -50%);
+}
+
+.upload-thumb-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.upload-thumb-progress .progress, .upload-thumb-progress .progress-bar {
+    height: .375rem;
+    border-radius: 0;
+    font-size: 0;
+}

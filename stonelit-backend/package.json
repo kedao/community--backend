@@ -1,0 +1,86 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/backend",
+  "dependencies": {
+    "@devexpress/dx-react-chart": "^2.7.5",
+    "@devexpress/dx-react-chart-bootstrap4": "^2.7.5",
+    "@devexpress/dx-react-core": "^2.7.5",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.1",
+    "array-move": "^3.0.1",
+    "axios": "^0.21.1",
+    "classnames": "^2.2.6",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "formik": "^2.1.4",
+    "history": "^4.10.1",
+    "html-to-draftjs": "^1.5.0",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.11.0",
+    "react": "^16.8.6",
+    "react-bootstrap-daterangepicker": "^7.0.0",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-data-table-component": "^6.11.7",
+    "react-dom": "^16.8.6",
+    "react-draft-wysiwyg": "^1.14.5",
+    "react-images-upload": "^1.2.8",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "4.0.3",
+    "react-select": "^4.2.1",
+    "react-sortable-hoc": "^1.11.0",
+    "react-switch": "^6.0.0",
+    "react-teleporter": "^2.1.1",
+    "react-toast-notifications": "^2.4.3",
+    "reactstrap": "^8.9.0",
+    "rxjs": "^6.3.3",
+    "styled-components": "^5.2.1",
+    "wangeditor": "^4.6.13",
+    "web-vitals": "^1.1.0",
+    "yup": "^0.28.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.11.0",
+    "less-loader": "^5.0.0",
+    "path": "^0.12.7",
+    "react-app-rewired": "^2.1.8",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "public": "react-app-rewired build; tar zcvf backend.tar.gz build/*; scp backend.tar.gz root@1.15.72.79:~/backend.tar.gz; ssh root@1.15.72.79 'tar -zxvf ~/backend.tar.gz -C /usr/share/www/stonelit/frontend/backend --strip-components 1 --overwrite'; rm backend.tar.gz",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
